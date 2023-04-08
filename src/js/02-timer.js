@@ -19,16 +19,12 @@ const options = {
         if (selectedDates[0] < Date.now()) {
             alert("Please choose a date in the future");
             btnStart.disabled = true;
-            console.log(selectedDates[0]);
         } if (selectedDates[0] > Date.now()) {
             btnStart.disabled = false;
-        }
+      };
+      console.log(selectedDates[0]);
   },
 };
-
-// if (onClose(selectedDates) < Date.now) {
-//     alert("Please choose a date in the future")
-// }
 
 flatpickr(inputTimer, options);
 
